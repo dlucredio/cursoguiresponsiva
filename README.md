@@ -7,5 +7,6 @@ Assume-se que o estudante já possua um conhecimento básico de HTML.
 Módulos do curso
 
 * [Princípios de HTML/CSS](htmlCss.md)
+* [Exemplos de interfaces responsivas](responsividade.md)
 * [Frameworks para CSS](frameworksCss.md)
-* [Design de interfaces responsivas](responsividade.md)
+* [Exercícios](exercicios.md)
