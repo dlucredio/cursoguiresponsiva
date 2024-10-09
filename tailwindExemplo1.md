@@ -19,7 +19,7 @@ module.exports = {
         },
     },
     plugins: [],
-    darkMode: 'class',
+    darkMode: 'selector',
 }
 ```
 
@@ -252,7 +252,7 @@ module.exports = {
         },
     },
     plugins: [],
-    darkMode: 'class',
+    darkMode: 'selector',
 }
 ```
 
