@@ -301,7 +301,7 @@ footer {
 ```
 
 5. Agora vamos adicionar uma opção para utilizar um ícone para o menu na versão para telas pequenas
-6. Modificar o arquivo `index.html`:
+6. Modificar o arquivo `indexNavbar.html`:
 
 ```diff
 <!DOCTYPE html>
