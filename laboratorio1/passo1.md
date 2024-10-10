@@ -1,3 +1,10 @@
+<style>
+  code {
+    white-space : pre-wrap !important;
+    word-break: break-word;
+  }
+</style>
+
 A solução para telas pequenas, com modo claro e escuro, é a seguinte:
 
 ```html
