@@ -87,7 +87,7 @@ Para incluir suporte para telas médias, faça as seguintes alterações:
         <div class="p-8 rounded bg-red-800 text-white text-3xl">
             Compre! Compre! Compre!
         </div>
-        <div class="flex flex-row flex-wrap">
+        <div class="flex flex-col">
             <div class="w-full">
                 <div class="pb-4 w-full flex flex-row border-t-2 border-gray-950
                 dark:border-gray-300">

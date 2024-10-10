@@ -1,6 +1,6 @@
-A solução para telas pequenas, com modo claro e escuro, é a seguinte:
+Para incluir suporte para telas grandes, faça as seguintes alterações:
 
-```html
+```diff
 <!DOCTYPE html>
 <html class="">
 
@@ -42,7 +42,8 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
             <div onclick="toggleMenu()" class="flex items-center justify-center
             select-none cursor-pointer text-gray-500 hover:text-orange-800
             active:text-red-500 dark:hover:text-orange-300
-            dark:active:text-red-500">
+            dark:active:text-red-500
++            lg:hidden">
                 <i class="material-icons">menu</i>
             </div>
 
@@ -50,7 +51,8 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
             select-none">NEWS</div>
             <div id="menu" class="fixed top-14 left-0 w-full z-10 hidden
             flex-col p-8 gap-y-2 text-lg font-bold bg-gray-200
-            dark:bg-gray-900">
+            dark:bg-gray-900
++            lg:static lg:top-0 lg:flex lg:flex-row lg:p-0 lg:text-sm">
                 <div class="p-2 cursor-pointer select-none hover:text-orange-800
                 dark:hover:text-orange-300">Business</div>
                 <div class="p-2 cursor-pointer select-none hover:text-orange-800
@@ -82,19 +84,26 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
             </div>
         </div>
     </div>
-    <div class="mt-24 px-4 pb-4 flex flex-col gap-y-4 items-center">
+    <div class="mt-24 px-4 pb-4 flex flex-col gap-y-4 items-center
+                md:px-10">
         <div class="p-8 rounded bg-red-800 text-white text-3xl">
             Compre! Compre! Compre!
         </div>
-        <div class="flex flex-col">
-            <div class="w-full">
+        <div class="flex flex-col
++        lg:flex-row lg:flex-wrap">
+            <div class="w-full
++            lg:w-3/4 lg:pr-8">
                 <div class="pb-4 w-full flex flex-row border-t-2 border-gray-950
                 dark:border-gray-300">
                     <div class="w-full p-2 bg-gray-950 text-white
-                    dark:bg-gray-300 dark:text-black">Today's picks</div>
+                    dark:bg-gray-300 dark:text-black
+                    md:w-fit">
+                    Today's picks</div>
                 </div>
-                <div class="flex flex-col">
-                    <div class="w-full flex flex-col gap-y-2 mb-8">
+                <div class="flex flex-col
+                            md:flex-row-reverse md:gap-x-8">
+                    <div class="w-full flex flex-col gap-y-2 mb-8
+                                md:w-3/4">
                         <div class="w-full h-80 bg-[url('imagemPick1.jpg')]
                         bg-center bg-cover"></div>
                         <div class="text-xs italic">Category</div>
@@ -110,14 +119,19 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                         ex.</div>
                         <div class="text-xs">Author name</div>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col
+                                md:w-1/4">
                         <div class="w-full flex flex-col gap-y-2 mb-8">
                             <div class="w-full h-80 bg-[url('imagemPick2.jpg')]
-                            bg-center bg-cover"></div>
+                            bg-center bg-cover
+                            md:h-32"></div>
                             <div class="text-xs italic">Category</div>
-                            <div class="text-5xl font-bold">Not so important
-                            news!</div>
-                            <div class="text-sm">Lorem ipsum dolor sit amet,
+                            <div class="text-5xl font-bold
+                            md:text-xl">
+                            Not so important news!</div>
+                            <div class="text-sm
+                            md:hidden">
+                            Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Curabitur pulvinar nisl
                             a volutpat sagittis. Pellentesque habitant morbi
                             tristique senectus et netus et malesuada fames ac
@@ -129,11 +143,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                         </div>
                         <div class="w-full flex flex-col gap-y-2 mb-8">
                             <div class="w-full h-80 bg-[url('imagemPick3.jpg')]
-                            bg-center bg-cover"></div>
+                            bg-center bg-cover
+                            md:h-32"></div>
                             <div class="text-xs italic">Category</div>
-                            <div class="text-5xl font-bold">Not so important
-                            news!</div>
-                            <div class="text-sm">Lorem ipsum dolor sit amet,
+                            <div class="text-5xl font-bold
+                            md:text-xl">
+                            Not so important news!</div>
+                            <div class="text-sm
+                            md:hidden">
+                            Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Curabitur pulvinar nisl
                             a volutpat sagittis. Pellentesque habitant morbi
                             tristique senectus et netus et malesuada fames ac
@@ -146,14 +164,20 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
++            lg:w-1/4">
                 <div class="pb-4 w-full flex flex-row border-t-2 border-gray-950
                 dark:border-gray-300">
                     <div class="w-full p-2 bg-gray-950 text-white
-                    dark:bg-gray-300 dark:text-black">Recent news</div>
+                    dark:bg-gray-300 dark:text-black
+                    md:w-fit">
+                    Recent news</div>
                 </div>
-                <div class="flex flex-col w-full gap-y-2">
-                    <div class="w-full flex flex-col gap-y-2 mb-2">
+                <div class="flex flex-col w-full gap-y-2
+                            md:flex-row md:flex-wrap md:mb-8">
+                    <div class="w-full flex flex-col gap-y-2 mb-2
+                                md:w-1/2 md:px-2
++                                lg:w-full">
                         <div class="text-xl font-bold">
                             First, Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
@@ -162,7 +186,9 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                         <div class="w-full border-t mb-2 border-gray-300
                         dark:border-gray-700"></div>
                     </div>
-                    <div class="w-full flex flex-col gap-y-2 mb-2">
+                    <div class="w-full flex flex-col gap-y-2 mb-2
+                                md:w-1/2 md:px-2
++                                lg:w-full">
                         <div class="text-xl font-bold">
                             Second, Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
@@ -171,16 +197,22 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                         <div class="w-full border-t mb-2 border-gray-300
                         dark:border-gray-700"></div>
                     </div>
-                    <div class="w-full flex flex-col gap-y-2 mb-2">
+                    <div class="w-full flex flex-col gap-y-2 mb-2
+                                md:w-1/2 md:px-2
++                                lg:w-full">
                         <div class="text-xl font-bold">
                             Third, Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
                         </div>
                         <div class="text-xs">Author name</div>
                         <div class="w-full border-t mb-2 border-gray-300
-                        dark:border-gray-700"></div>
+                        dark:border-gray-700
+                        md:hidden
++                        lg:block"></div>
                     </div>
-                    <div class="w-full flex flex-col gap-y-2 mb-2">
+                    <div class="w-full flex flex-col gap-y-2 mb-2
+                                md:w-1/2 md:px-2
++                                lg:w-full">
                         <div class="text-xl font-bold">
                             Fourth, Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
@@ -190,13 +222,17 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                 </div>
             </div>
         </div>
-        <div class="w-full flex flex-col">
-            <div class="w-full">
+        <div class="w-full flex flex-col
+                    md:flex-row md:flex-wrap md:mb-8">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Business</div>
+                dark:text-black
+                md:w-fit">Business</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemBusiness.jpg')]
-                    bg-center bg-cover"></div>
+                    bg-center bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important business news.
                     </div>
@@ -212,12 +248,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Science</div>
+                dark:text-black
+                md:w-fit">Science</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemScience.jpg')]
-                    bg-center bg-cover"></div>
+                    bg-center bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important science news.
                     </div>
@@ -233,12 +272,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Culture</div>
+                dark:text-black
+                md:w-fit">Culture</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemCulture.jpg')]
-                    bg-center bg-cover"></div>
+                    bg-center bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important culture news.
                     </div>
@@ -254,12 +296,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Sports</div>
+                dark:text-black
+                md:w-fit">Sports</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemSports.jpg')]
-                    bg-center bg-cover"></div>
+                    bg-center bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important sports news.
                     </div>
@@ -275,12 +320,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Entertainment</div>
+                dark:text-black
+                md:w-fit">Entertainment</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemEntertainment.jpg')]
-                    bg-center bg-cover"></div>
+                    bg-center bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important entertainment news.
                     </div>
@@ -296,12 +344,15 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
                     </div>
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full
+                        md:w-1/3 md:px-4">
                 <div class="w-full p-2 bg-gray-950 text-white dark:bg-gray-300
-                dark:text-black">Tech</div>
+                dark:text-black
+                md:w-fit">Tech</div>
                 <div class="w-full flex flex-col gap-y-2 mb-8">
                     <div class="w-full h-80 bg-[url('imagemTech.jpg')] bg-center
-                    bg-cover"></div>
+                    bg-cover
+                    md:h-32"></div>
                     <div class="text-xl font-bold">
                         First important tech news.
                     </div>
