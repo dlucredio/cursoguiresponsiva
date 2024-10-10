@@ -18,6 +18,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
++  darkMode: 'selector'
 }
 ```
 4. Crie um arquivo chamado `tailwindInput.css`, com o seguinte conteúdo:
