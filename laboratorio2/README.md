@@ -5,4 +5,5 @@ Vamos criar uma página de notícias responsiva para telas pequenas/médias/gran
 [Clique aqui para ver o site](https://htmlpreview.github.io/?https://github.com/dlucredio/cursoguiresponsiva/blob/main/laboratorio2/siteFinal/index.html)
 
 Obs: esse exemplo é uma cópia do layout do [WIRED](https://www.wired.com/)
-Obs: os créditos para as imagens estão [AQUI](creditos.md)
+
+Obs2: os créditos para as imagens estão [AQUI](creditos.md)
