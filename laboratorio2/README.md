@@ -7,3 +7,9 @@ Vamos criar uma página de notícias responsiva para telas pequenas/médias/gran
 Obs: esse exemplo é uma cópia do layout do [WIRED](https://www.wired.com/)
 
 Obs2: os créditos para as imagens estão [AQUI](creditos.md)
+
+## Soluções
+
+* [Tela pequena](passo1.md)
+* [Tela pequena + média](passo2.md)
+* [Tela pequena + média + grande](passo3.md)
