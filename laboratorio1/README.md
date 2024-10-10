@@ -2,17 +2,7 @@
 
 Vamos criar uma página de login responsiva para telas pequenas/médias/grandes, com modo escuro e claro automáticos.
 
-## Modo claro
-
-|Tela pequena|Tela média|Tela grande|
-|------------|----------|-----------|
-|![Tela pequena modo claro](smallLight.png)|![Tela média modo claro](mediumLight.png)|![Tela grande modo claro](largeLight.png)
-
-## Modo escuro
-
-|Tela pequena|Tela média|Tela grande|
-|------------|----------|-----------|
-|![Tela pequena modo claro](smallDark.png)|![Tela média modo claro](mediumDark.png)|![Tela grande modo claro](largeDark.png)
+[Clique aqui para ver o site](https://htmlpreview.github.io/?https://github.com/dlucredio/cursoguiresponsiva/blob/main/laboratorio1/siteFinal/index.html)
 
 ## Imagens utilizadas
 
@@ -27,4 +17,3 @@ Os exemplos utilizam os seguintes artefatos:
 * [Tela pequena](passo1.md)
 * [Tela pequena + média](passo2.md)
 * [Tela pequena + média + grande](passo3.md)
-* [Solução completa](solucaocCompleta.md)
