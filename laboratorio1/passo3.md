@@ -11,10 +11,32 @@ Para incluir suporte para telas grandes, faça as seguintes alterações:
     <link href="tailwindOutput.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <script>
+        function toggleDarkMode() {
+            const htmlElement = document.documentElement;
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+            } else {
+                htmlElement.classList.add('dark');
+            }
+        }
+    </script>
 </head>
 
 <body class="w-full h-dvh min-h-dvh flex items-center justify-center
              bg-slate-300 md:bg-slate-500 dark:md:bg-slate-800">
+    <div class="fixed right-8 bottom-8 z-10">
+        <div onclick="toggleDarkMode()" class="select-none cursor-pointer
+text-black hover:text-yellow-500
+dark:text-white">
+            <div class="text-xs dark:hidden">
+                <i class="material-icons">nightlight</i>
+            </div>
+            <div class="text-xs hidden dark:block">
+                <i class="material-icons">lightbulb</i>
+            </div>
+        </div>
+    </div>
     <div class="w-full h-full
 +                lg:grid-cols-2 lg:grid">
 +        <div class="bg-[url('imagem.jpg')] bg-center bg-cover lg:flex

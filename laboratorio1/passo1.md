@@ -11,10 +11,32 @@ A solução para telas pequenas, com modo claro e escuro, é a seguinte:
     <link href="tailwindOutput.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <script>
+        function toggleDarkMode() {
+            const htmlElement = document.documentElement;
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+            } else {
+                htmlElement.classList.add('dark');
+            }
+        }
+    </script>
 </head>
 
 <body class="w-full h-dvh min-h-dvh flex items-center justify-center
 bg-slate-300">
+    <div class="fixed right-8 bottom-8 z-10">
+        <div onclick="toggleDarkMode()" class="select-none cursor-pointer
+text-black hover:text-yellow-500
+dark:text-white">
+            <div class="text-xs dark:hidden">
+                <i class="material-icons">nightlight</i>
+            </div>
+            <div class="text-xs hidden dark:block">
+                <i class="material-icons">lightbulb</i>
+            </div>
+        </div>
+    </div>
     <div class="w-full h-full">
         <div class="w-full h-full flex items-center justify-center">
             <div class="w-full h-full flex flex-col items-center justify-between
