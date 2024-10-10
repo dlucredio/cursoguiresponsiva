@@ -72,3 +72,4 @@ module.exports = {
 <hr/>
 
 * [Laboratório 1](laboratorio1/README.md)
+* [Laboratório 2](laboratorio2/README.md)
