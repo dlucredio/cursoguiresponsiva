@@ -73,3 +73,4 @@ module.exports = {
 
 * [Laboratório 1](laboratorio1/README.md)
 * [Laboratório 2](laboratorio2/README.md)
+* [Laboratório 3](laboratorio3/README.md)
